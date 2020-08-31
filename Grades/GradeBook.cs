@@ -6,6 +6,12 @@ namespace Grades
     {
         public GradeBook()
         {
+            grades = new List<float>();
+        }
+
+        public GradeStatistics ComputeStatistics()
+        {
+            return new GradeStatistics();
         }
 
         public void AddGrade(float grade)
@@ -13,6 +19,6 @@ namespace Grades
             grades.Add(grade);
         }
 
-        List<float> grades;
+        private List<float> grades;
     }
 }
