@@ -6,7 +6,7 @@ namespace Grades
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            GradeBook book = new GradeBook();
         }
     }
 }
